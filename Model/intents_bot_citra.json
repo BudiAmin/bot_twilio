@@ -1,0 +1,174 @@
+{
+  "intents": [
+    {
+      "tag": "sapaan_awal",
+      "patterns": [
+        "test",
+        "p",
+        "halo",
+        "permisi",
+        "hai",
+        "selamat pagi",
+        "assalamualaikum",
+        "sampurasun",
+        "coba botnya"
+      ],
+      "responses": [
+        "Sampurasun! Selamat datang di Bot Citra 😊\nSilakan ajukan pertanyaan Anda terkait layanan kependudukan atau administrasi yang tersedia. Contoh: *'Syarat membuat KTP?'*"
+      ]
+    },
+    {
+      "tag": "persyaratan_pembuatan_ktp",
+      "patterns": [
+        "apa saja syarat membuat KTP?",
+        "bagaimana cara membuat KTP?",
+        "mau buat KTP baru",
+        "persyaratan KTP",
+        "dokumen untuk pembuatan KTP",
+        "saya ingin mengurus KTP"
+      ],
+      "responses": [
+        {
+          "type": "text",
+          "content": "Berikut adalah persyaratan pembuatan KTP:\n1. Fotokopi Kartu Keluarga\n2. Formulir KTP F-1.21 dari Kelurahan."
+        },
+        {
+          "type": "file",
+          "content": "styles/files/formulir_ktp_f121.pdf"
+        }
+      ]
+    },
+    {
+      "tag": "pembuatan_kk",
+      "patterns": [
+        "bagaimana cara membuat kartu keluarga?",
+        "persyaratan membuat KK",
+        "apa saja syarat KK?",
+        "syarat pembuatan kartu keluarga",
+        "urus KK baru",
+        "mau buat KK"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan utama pembuatan Kartu Keluarga (KK):\n1. Formulir F-1.01\n2. KK Asli\n3. SKDWNI / Surat Keterangan Datang WNI dari Disdukcapil Kota Cimahi (jika pindahan)."
+      ],
+      "attachments": [
+        {
+          "type": "pdf",
+          "url": "https://example.com/files/formulir_kk_f101.pdf",
+          "description": "Formulir Pembuatan KK F-1.01"
+        }
+      ]
+    },
+    {
+      "tag": "berkas_pendukung_kk",
+      "patterns": [
+        "apa berkas pendukung pembuatan KK?",
+        "dokumen tambahan KK",
+        "kalau ada perubahan keluarga, dokumen apa yang dibutuhkan?",
+        "tambahan syarat KK"
+      ],
+      "responses": [
+        "Berkas pendukung pembuatan KK sesuai kondisi:\n- Fotokopi Buku Nikah (jika baru berkeluarga)\n- Fotokopi Akta Cerai (jika sudah bercerai)\n- Fotokopi Akta Kelahiran (jika ada penambahan anggota keluarga baru)\n- Fotokopi Akta Kematian (jika ada pengurangan anggota keluarga karena meninggal)"
+      ]
+    },
+    {
+      "tag": "izin_persetujuan_tetangga",
+      "patterns": [
+        "apa saja syarat izin tetangga?",
+        "persyaratan persetujuan tetangga",
+        "mau minta persetujuan tetangga",
+        "syarat bikin izin bangunan",
+        "izin mendirikan bangunan dari warga sekitar"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan pengajuan izin persetujuan tetangga:\n1. Formulir dari Kelurahan\n2. Fotokopi Sertifikat Tanah / AJB Perusahaan\n3. Fotokopi IMB (Izin Mendirikan Bangunan)\n4. Fotokopi KTP dan KK\n5. Persetujuan tetangga (minimal 6, maksimal 10 orang) disertai fotokopi KTP masing-masing."
+      ]
+    },
+    {
+      "tag": "pendirian_yayasan",
+      "patterns": [
+        "apa saja syarat mendirikan yayasan?",
+        "bagaimana cara mendirikan yayasan?",
+        "syarat pendirian lembaga pendidikan",
+        "persyaratan pendirian yayasan sosial",
+        "mau bikin yayasan"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan pendirian yayasan:\n1. Formulir dari Kelurahan\n2. Fotokopi Bukti Kepemilikan Tempat\n3. Fotokopi Akta Pendirian Yayasan\n4. Fotokopi IMB\n5. Fotokopi KTP dan KK."
+      ],
+      "attachments": [
+        {
+          "type": "pdf",
+          "url": "https://example.com/files/syarat_pendirian_yayasan.pdf",
+          "description": "Panduan Pendirian Yayasan"
+        }
+      ]
+    },
+    {
+      "tag": "surat_keterangan_domisili",
+      "patterns": [
+        "cara buat surat domisili",
+        "syarat surat keterangan domisili",
+        "mau ngurus surat domisili",
+        "persyaratan domisili",
+        "bagaimana bikin surat domisili dari kelurahan?"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan untuk membuat Surat Keterangan Domisili:\n1. Formulir dari Kelurahan\n2. KK dan KTP Asli\n3. Pas Foto ukuran 3x4 sebanyak 3 lembar."
+      ],
+      "attachments": [
+        {
+          "type": "pdf",
+          "url": "https://example.com/files/surat_domisili.pdf",
+          "description": "Contoh Surat Domisili"
+        }
+      ]
+    },
+    {
+      "tag": "sktm",
+      "patterns": [
+        "bagaimana cara membuat surat tidak mampu?",
+        "syarat SKTM",
+        "mau bikin surat keterangan tidak mampu",
+        "persyaratan surat tidak mampu",
+        "saya ingin buat SKTM"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan untuk membuat Surat Keterangan Tidak Mampu (SKTM):\n1. Surat Pengantar dari Kelurahan\n2. Fotokopi Kartu Keluarga (KK)\n3. Fotokopi E-KTP."
+      ],
+      "attachments": [
+        {
+          "type": "pdf",
+          "url": "https://example.com/files/form_sktm.pdf",
+          "description": "Contoh Surat Keterangan Tidak Mampu"
+        }
+      ]
+    },
+    {
+      "tag": "perubahan_data_kependudukan",
+      "patterns": [
+        "bagaimana cara ubah data kependudukan?",
+        "syarat perubahan data di KK atau KTP",
+        "saya mau ubah data penduduk",
+        "mau bikin surat perubahan data",
+        "surat pengantar ubah data dari kelurahan"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan untuk membuat Surat Pengantar Perubahan Data Kependudukan:\n1. Surat pengantar dari Kelurahan\n2. Fotokopi Kartu Keluarga (KK) dan KTP."
+      ]
+    },
+    {
+      "tag": "legalisir_kk_ktp",
+      "patterns": [
+        "bagaimana cara legalisir KTP?",
+        "legalisir KK syaratnya apa?",
+        "mau legalisir kartu keluarga",
+        "saya ingin legalisir ktp dan kk",
+        "persyaratan legalisir KTP dan KK"
+      ],
+      "responses": [
+        "Berikut adalah persyaratan untuk legalisir KK dan KTP:\n1. Fotokopi KK dan KTP\n2. Membawa dokumen aslinya untuk dicocokkan."
+      ]
+    }
+  ]
+}
